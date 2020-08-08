@@ -4,7 +4,7 @@ const gpOptions =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/chopper'
+          base: '/chopper/'
         },
         build :{
           publicPath: '/static/',
