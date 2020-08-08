@@ -38,17 +38,15 @@ jobs:
     - name: Test
       run: yarn run test
 
-    - name: Build
-      run: |
-        yarn run build:gh-pages
-        yarn run export:gh-pages
+    # - name: Build
+    #   run: |
+    #     yarn run build:gh-pages
+    #     yarn run export:gh-pages
 
-    # - name: Generate
-    #   run: yarn run generate:gh-pages
+    - name: Generate
+      run: yarn run generate:gh-pages
 
     - name: Deploy
       run: |
-        ls -al
-        ls -al dist
         git config --local user.name "wtotw"
         yarn run deploy:gh-pages
