@@ -41,7 +41,7 @@ jobs:
     - name: Generate
       run: yarn run generate:gh-pages
 
-    - name: Debug
+    - name: Deploy
       run: |
         git config --local user.name "wtotw"
         yarn run deploy:gh-pages
