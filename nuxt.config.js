@@ -5,11 +5,7 @@ const gpOptions =
     ? {
         router: {
           base: '/chopper/'
-        },
-        // build :{
-        //   publicPath: '/static/',
-        //   extend(config, ctx) {}
-        // }
+        }
       }
     : {};
 
@@ -18,7 +14,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
