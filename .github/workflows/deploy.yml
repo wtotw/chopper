@@ -42,7 +42,7 @@ jobs:
       run: yarn run generate:gh-pages
 
     - name: Debug
-      run: ls -al
+      run: ls -al dist
 
     # - name: Deploy
     #   run: yarn run deploy:gh-pages
