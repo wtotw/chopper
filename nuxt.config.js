@@ -7,7 +7,7 @@ const gpOptions =
           base: '/chopper/'
         },
         build :{
-          publicPath: '/static/',
+          publicPath: '/static',
           extend(config, ctx) {}
         }
       }
