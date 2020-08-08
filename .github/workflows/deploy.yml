@@ -38,7 +38,8 @@ jobs:
     - name: Test
       run: yarn run test
 
+    - name: Generate
+      run: yarn run generate:gh-pages
+
     - name: Deploy
-      run: |
-        yarn run generate:gh-pages
-        yarn run deploy:gh-pages
+      run: yarn run deploy:gh-pages
