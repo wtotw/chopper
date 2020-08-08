@@ -45,6 +45,7 @@ jobs:
       run: |
         ls -al
         ls -al dist
+        git status
 
     # - name: Deploy
     #   run: yarn run deploy:gh-pages
