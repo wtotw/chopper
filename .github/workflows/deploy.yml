@@ -44,12 +44,4 @@ jobs:
     - name: Deploy
       run: |
         git config --local user.name "wtotw"
-        git config --local user.email "s135061@gmail.com"
         yarn run deploy:gh-pages
-
-    # - name: Deploy 🚀
-    #   uses: JamesIves/github-pages-deploy-action@3.5.9
-    #   with:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     BRANCH: gh-pages
-    #     FOLDER: dist
