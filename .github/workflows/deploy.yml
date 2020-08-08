@@ -43,16 +43,5 @@ jobs:
 
     - name: Debug
       run: |
-        ls -al
-        ls -al dist
-        git status
-
-    - name: Deploy
-      run: yarn run deploy:gh-pages
-
-    # - name: Deploy 🚀
-    #   uses: JamesIves/github-pages-deploy-action@3.5.9
-    #   with:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     BRANCH: gh-pages
-    #     FOLDER: dist
+        git config --local user.name "wtotw"
+        yarn run deploy:gh-pages
