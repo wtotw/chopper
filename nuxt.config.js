@@ -5,6 +5,10 @@ const gpOptions =
     ? {
         router: {
           base: '/chopper/'
+        },
+        build :{
+          publicPath: '/static/',
+          extend(config, ctx) {}
         }
       }
     : {};
