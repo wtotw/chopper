@@ -41,6 +41,9 @@ jobs:
     - name: Generate
       run: yarn run generate:gh-pages
 
+    - name: Debug
+      run: ls -al
+
     # - name: Deploy
     #   run: yarn run deploy:gh-pages
 
