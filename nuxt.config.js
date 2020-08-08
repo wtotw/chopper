@@ -9,7 +9,9 @@ const gpOptions =
       }
     : {};
 console.log(gpOptions);
-export default {
+
+const config =
+ {
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
@@ -106,3 +108,5 @@ export default {
    */
   ...gpOptions
 }
+console.log(config)
+export default config
