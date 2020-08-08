@@ -1,9 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
-const ghOption =
+const gpOptions =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        target: 'static',
         router: {
           base: '/chopper/'
         }
@@ -103,8 +102,7 @@ export default {
   build: {},
 
   /**
-   * Router configuration
-   * Server or Github Pages
+   * Github Pages configuration
    */
-  ghOption
+  gpOptions
 }

@@ -47,8 +47,8 @@ jobs:
         ls -al dist
         git status
 
-    # - name: Deploy
-    #   run: yarn run deploy:gh-pages
+    - name: Deploy
+      run: yarn run deploy:gh-pages
 
     # - name: Deploy 🚀
     #   uses: JamesIves/github-pages-deploy-action@3.5.9
