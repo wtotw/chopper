@@ -8,7 +8,7 @@ const gpOptions =
         }
       }
     : {};
-
+console.log(gpOptions);
 export default {
   /*
    ** Nuxt rendering mode
