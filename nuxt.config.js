@@ -1,5 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/<repository-name>/'
+        }
+      }
+    : {};
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -91,4 +100,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+
+  /**
+   * Router configuration
+   * Server or Github Pages
+   */
+  routerBase
 }
