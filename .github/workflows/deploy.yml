@@ -42,10 +42,12 @@ jobs:
       run: yarn run generate:gh-pages
 
     - name: Debug
-      run: ls -al dist
+      run: |
+        ls -al
+        ls -al dist
 
-    - name: Deploy
-      run: yarn run deploy:gh-pages
+    # - name: Deploy
+    #   run: yarn run deploy:gh-pages
 
     # - name: Deploy 🚀
     #   uses: JamesIves/github-pages-deploy-action@3.5.9
