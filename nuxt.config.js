@@ -104,5 +104,5 @@ export default {
   /**
    * Github Pages configuration
    */
-  gpOptions
+  ...gpOptions
 }
