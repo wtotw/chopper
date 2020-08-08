@@ -41,14 +41,11 @@ jobs:
     - name: Generate
       run: yarn run generate:gh-pages
 
-    - name: Debug
-      run: |
-        ls -al
-        ls -al dist
-        git status
-
     - name: Deploy
-      run: yarn run deploy:gh-pages
+      run: |
+        git config --local user.name "wtotw"
+        git config --local user.email "s135061@gmail.com"
+        yarn run deploy:gh-pages
 
     # - name: Deploy 🚀
     #   uses: JamesIves/github-pages-deploy-action@3.5.9
