@@ -14,8 +14,8 @@
     "test": "yarn test:unit && yarn test:e2e",
     "test:unit": "cross-env TEST=unit ava ./test/specs/**/*",
     "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy:gh-pages": "push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.10",
@@ -43,6 +43,7 @@
     "jsdom": "^16.2.2",
     "jsdom-global": "^3.0.2",
     "prettier": "^2.0.5",
+    "push-dir": "^0.4.1",
     "require-extension-hooks": "^0.3.3",
     "require-extension-hooks-babel": "^1.0.0",
     "require-extension-hooks-vue": "^3.0.0",
